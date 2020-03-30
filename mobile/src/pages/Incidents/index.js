@@ -31,7 +31,7 @@ export default function Incidents() {
 
         setLoading(true);
 
-        const response = await api.get('http://192.168.0.22:3333/incidents', {
+        const response = await api.get('http://localhost:3333/incidents', {
             params: {page}
         });
         setIncidents([...incidents, ...response.data]);
